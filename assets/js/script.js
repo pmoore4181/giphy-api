@@ -41,3 +41,25 @@ var animals = ["doggo", "cat", "squirrel", "seal"];
     });
 
     renderButtons();
+
+    // Retrieve the JSON data for each button
+    function retrieveGifInfo() {
+
+      var animalButton = $(this).attr("data-name");
+      var queryURL = "http://api.giphy.com/v1/gifs/search?api_key=" + APIkey + "&q=" + animalButton  + "&limit=10";
+
+      $.ajax({
+        url: queryURL,
+        method: "GET"
+      }).done(function(response) {
+        $("#animalGifs").empty();
+        for (var i = 0; i<=9; i++){
+            newGifs = response.data[i].embed_url;
+            $("#animalGifs").append("<iframe src='" + newGifs + "'</iframe>");
+        }
+      });
+    }
+
+    $(document).on("click", ".animal", retrieveGifInfo);
+
+
