@@ -1,0 +1,18 @@
+.gif {
+	width: 50%;
+	margin-bottom: 20px;
+}
+
+button {
+	padding: 5px;
+	margin: 5px;
+}
+
+.gifRating {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.animal {
+	margin-bottom: 20px;
+}
