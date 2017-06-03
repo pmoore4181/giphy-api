@@ -1,18 +1,29 @@
-.gif {
-	width: 50%;
-	margin-bottom: 20px;
+/* =================== Button Section ====================== */
+
+.animal {
+    padding: 5px;
+    margin: 10px 5px 20px 5px;
 }
 
-button {
-	padding: 5px;
-	margin: 5px;
+/* ==================== Form Section ======================== */
+
+#animalText {
+    margin-right: 15px;
+}
+
+#addAnimal {
+    margin-top: 20px;
+    margin-left: 30%;
+}
+
+/* ===================== Gif Section ======================== */
+
+.gif {
+    width: 50%;
+    margin-bottom: 20px;
 }
 
 .gifRating {
-	font-weight: bold;
-	margin-bottom: 5px;
-}
-
-.animal {
-	margin-bottom: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
